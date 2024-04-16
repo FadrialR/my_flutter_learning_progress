@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Scaffold(
-        body: Text("First Flutter"),
+        body: SafeArea(child: Text("First Flutter")),
       ),
     );
   }
