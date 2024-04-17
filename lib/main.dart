@@ -11,13 +11,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Cashy',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text("Cashy"), backgroundColor: Colors.blue[700]),
+        appBar: AppBar(
+          title: Text("Cashy"),
+          backgroundColor: Colors.blue[700],
+          actions: <Widget>[
+            IconButton(icon: Icon(Icons.mail), onPressed: () {})
+          ],
+        ),
         body: SafeArea(child: Text("First Flutter")),
       ),
     );
