@@ -22,10 +22,17 @@ class MyApp extends StatelessWidget {
           title: Text("Cashy"),
           backgroundColor: Colors.blue[700],
           actions: <Widget>[
-            IconButton(icon: Icon(Icons.mail), onPressed: () {})
+            IconButton(
+                icon: Icon(Icons.mail),
+                onPressed: () {},
+                color: Colors.yellowAccent)
           ],
         ),
-        body: SafeArea(child: Text("First Flutter")),
+        body: SafeArea(
+            child: Image(
+          image: AssetImage('assets/images/payment.png'),
+          width: 70,
+        )),
       ),
     );
   }
