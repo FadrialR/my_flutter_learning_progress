@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
             child: Container(
-          child: Column(
+          child: const Column(
             children: <Widget>[
               Image(
                 image: AssetImage('assets/images/payment.png'),
