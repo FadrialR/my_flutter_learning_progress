@@ -21,17 +21,19 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Cashy"),
           backgroundColor: Colors.blue[700],
-          actions: <Widget>[
-            IconButton(
-                icon: Icon(Icons.mail),
-                onPressed: () {},
-                color: Colors.yellowAccent)
-          ],
         ),
         body: SafeArea(
-            child: Image(
-          image: AssetImage('assets/images/payment.png'),
-          width: 70,
+            child: Container(
+          child: Column(
+            children: <Widget>[
+              Image(
+                image: AssetImage('assets/images/payment.png'),
+                width: 187,
+              ),
+              Text("Rich Together"),
+              Text("Save your money little bit and we will help to be rich")
+            ],
+          ),
         )),
       ),
     );
