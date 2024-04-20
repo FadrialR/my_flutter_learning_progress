@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
                 width: 187,
               ),
               Text("Rich Together"),
-              Text("Save your money little bit and we will help to be rich")
+              Text("Save your money")
             ],
           ),
         )),
