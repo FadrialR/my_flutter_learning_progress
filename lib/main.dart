@@ -24,6 +24,8 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
             child: Container(
+          margin: EdgeInsets.only(left: 115.0, top: 0, right: 10.0, bottom: 0),
+          padding: EdgeInsets.only(left: 0, top: 40.0, right: 0, bottom: 0),
           child: const Column(
             children: <Widget>[
               Image(
